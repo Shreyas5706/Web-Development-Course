@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow property</title>
+    <style>
+        .box{
+            height: 20vh;
+            width: 15vh;
+            border: 4px solid green;
+            overflow: scroll;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa porro, aliquam, deleniti reiciendis assumenda, sequi excepturi distinctio est labore accusantium architecto ad? Harum, quod perferendis a nesciunt eaque magnam minus accusantium magni quisquam ad cupiditate perspiciatis accusamus obcaecati consequatur itaque. Similique delectus quo numquam expedita, temporibus blanditiis dolore deserunt! Ut, pariatur. Maxime esse asperiores placeat, minima repellendus magnam.
+    </div>
+</body>
+</html>
+<!-- Notes
+CSS Overflow: content that is too large for an elements box, 
+                          CSS overflow property can be used to modify how overflow is handled.
+
+Property:
+
+1) overflow: visible;   // (default property) overflow content is visible.
+
+2) overflow: scroll;   // Scrollbar always visible even content not overflow the box.
+
+3) overflow: auto;   // If content overflow the box, scrollbar automatically visible or created.
+
+4) overflow: clip;  // No scroll bar, even content overflow. overflow content not visible (same as overflow:scroll property).
+
+5)  white-space: nowrap; //content only in single line (in x axis only), so we can scroll horizontally only. 
+
+6) text-overflow: ellipsis;  //content only in single line (in x axis only), overflow text will not visible, overflow text denoted by  ... (three dots) . 
+
+7) overflow-x: hidden
+overflow-y: scroll   //  scrollbar in x and y direction as per requirement.
+
+=>Shorten for overflow x and overflow y
+
+overflow: hidden scroll;//First(i.e; hidden) is for x direction ane second(i.e; scroll) is for y direction
+-->

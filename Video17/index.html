@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Element selector */
+        div{
+            color: yellowgreen;
+        }
+        /* Class Selector */
+        .black{
+            color: violet;
+        }
+        /* ID Selector */
+        #cat{
+            background-color: blueviolet;
+        }
+        /* Child Selector*/
+        span>div>p{
+            /* background-color: black; */
+        }
+        /* Descendant Selector */
+        span p{
+            background-color: antiquewhite;
+        }
+        /* Universal Selector */
+        *{
+            background-color: rgb(0, 0, 0);
+            margin: 10%;
+            margin-top: 10%;
+            padding: 10%;
+        }
+        /* Pseudo Selectors */
+        /* Visited link */
+        a:visited{
+            color: black;
+        }
+        /* Unvisited link */
+        a:link{
+            color: blueviolet;
+        }
+        /* selected link */
+        a:active{
+            background-color: brown ;
+        }
+        /* mouse over link */
+        a:hover{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <span><div id="cat">
+        I am div
+        <p>Paragraph inside div tag</p>
+    </div></span>
+    <div class="black">
+        Another Div
+        <p>Once more paragraph tag</p>
+    </div>
+    <a href="https://www.google.com">Go to google</a><br>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+</html>

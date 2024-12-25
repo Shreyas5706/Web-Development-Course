@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-row: 1;
+            grid-column: 1;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        main {
+            grid-row: 2;
+            grid-column: 1;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            grid-row: 3;
+            grid-column: 1;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Downloads</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 10 download boxes -->
+        <div class="box">Download 1</div>
+        <div class="box">Download 2</div>
+        <div class="box">Download 3</div>
+        <div class="box">Download 4</div>
+        <div class="box">Download 5</div>
+        <div class="box">Download 6</div>
+        <div class="box">Download 7</div>
+        <div class="box">Download 8</div>
+        <div class="box">Download 9</div>
+        <div class="box">Download 10</div>
+    </main>
+
+    <footer>
+        Your Footer
+    </footer>
+
+</body>
+</html>

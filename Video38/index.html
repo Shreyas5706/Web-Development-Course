@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* there is no justify-items  in flexbox; */
+            flex-flow: row wrap;
+            /* gap: 30px; 
+            row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+
+        }
+
+        .item {  
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        .item1{  
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+         
+        </div>
+    </main>
+
+</body>
+
+</html>
+<!-- Notes
+Justify-content and align-items: Control horizontal and vertical alignment of items within a flex container.
+
+Flex direction: Determines the main axis for item layout (horizontal or vertical).
+
+Flex Axis: The main axis determined by flex-direction.
+
+Flex Wrap: Specifies whether items wrap onto a new line when space is limited.
+
+Align content: Aligns lines of items when wrapping occurs in the cross-axis.
+
+Flex Flow: A shorthand property for combining flex-direction and flex-wrap.
+
+Gap property: Sets spacing between grid or flex items (replacing older gap properties).
+
+Order property:The order property in CSS is used in Flexbox layouts to change the visual order of flex items without altering the source code order. Key points about order:
+
+Row-Gap and Column-Gap: Older properties for gaps in flex containers, replaced by the gap property.
+
+Flex Grow and Flex Shrink: Control how items expand and contract based on available space.
+
+Align Self: Overrides align-items for individual flex items, allowing custom alignment.
+-->

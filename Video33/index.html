@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi colour Nav bar</title>
+    <style>
+        :root{
+            --bgcolor: rgba(39, 26, 212, 0.5);
+            --bdcolor: rgba(89, 219, 14, 0.774);
+            --color: rgba(190, 24, 107, 0.699);
+            --padding: 3px;
+            --margin:4px;
+        }
+        *{
+         margin: 0;
+         padding: 0;
+            /* background-color: var(--bgcolor); */
+        }
+        ul{
+            display: flex;
+            padding: var(--padding);
+background-color: var(--color);
+        }
+        li{
+            list-style: none;
+            background-color: var(--bgcolor);
+            border: 3px solid var(--bdcolor);
+        border-radius: var(--margin);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home&nbsp;</li>
+            <li>About&nbsp;</li>
+            <li>Contact&nbsp;</li>
+            <li>Help&nbsp;</li>
+            <li>Query&nbsp;</li>
+        </ul>
+    </div>
+</body>
+</html>
