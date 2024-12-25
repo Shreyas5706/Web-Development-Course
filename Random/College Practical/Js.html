@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript rotate images</title>
+</head>
+<body>
+<center><br>
+<img id="img" src="images (1).jpeg" style="width: 350px; border: brown solid;">
+<br><br>
+<button onClick="rotateImg()">45* Rotate Image</button><br>
+<button onClick="rotateImg1()">90* Rotate Image</button><br>
+<button onClick="rotateImg2()">180* Rotate Image</button><br>
+</center>
+<script>
+function rotateImg() {
+document.querySelector("#img").style.transform = "rotate(45deg)";
+}
+function rotateImg1() {
+document.querySelector("#img").style.transform = "rotate(90deg)";
+}
+function rotateImg2() {
+document.querySelector("#img").style.transform = "rotate(180deg)";
+}
+</script> 
+</body>
+</html

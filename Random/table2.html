@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr,
+        td {
+            border: 2px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .main-table {
+            width: 95vw;
+            height: 95vh;
+        }
+
+        .big {
+            width: 40%;
+            font-size: 5vh;
+            text-align: justify;
+            padding: 30px;
+        }
+
+        .smalltable {
+            width: 100%;
+            height: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="main-table">
+        <tr>
+            <td>
+                <table class="smalltable">
+                    <tr>
+                        <td></td>
+                        <td rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+            <td class="big" rowspan="2">
+                1. Apple <br>
+                2. Banana <br>
+                3. Pineapple<br>
+                4. Mango<br>
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <table class="smalltable">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+    </table>
+</body>
+
+</html>

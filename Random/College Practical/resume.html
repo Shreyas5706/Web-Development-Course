@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .personal-section {
+            background-color: #f9f9f9;
+        }
+        .education-section {
+            background-color: #f7f7f7;
+        }
+        .skills-section {
+            background-color: #f5f5f5;
+        }
+        .info {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .value {
+            font-style: italic;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th,td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .skills {
+            margin-top: 10px;
+        }
+        .skills ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Resume</h1>
+        <div class="section personal-section">
+            <h2>Personal Information</h2>
+            <div class="info">
+                <div class="label">Name:</div>
+                <div class="value">Patel Apeksha </div>
+            </div>
+            <div class="info">
+                <div class="label">Email:</div>
+                <div class="value">apekshapatel348@gmail.com</div>
+            </div>
+            <div class="info">
+                <div class="label">Phone:</div>
+                <div class="value">9714628238</div>
+            </div>
+            <div class="info">
+                <div class="label">Address:</div>
+                <div class="value">Pranami Bunglows , Vastral.</div>
+            </div>
+        </div>
+        <div class="section education-section">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Course</th>
+                        <th>Year of passing</th>
+                        <th>Percentage/CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>XYZ University</td>
+                        <td>Bachelor of Technology in Computer Science</td>
+                        <td>2024</td>
+                        <td>8.5/10</td>
+                    </tr>
+                    <tr>
+                        <td>ABC Junior College</td>
+                        <td>Higher Secondary Certificate (HSC)</td>
+                        <td>2020</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>DEF High School</td>
+                        <td>Secondary School Certificate (SSC)</td>
+                        <td>2018</td>
+                        <td>90%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section skills-section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>Programming Languages: HTML, CSS, JavaScript, Python, Java</li>
+                    <li>Frameworks: React, Angular</li>
+                    <li>Tools: Git, Wordpress, Docker</li>
+                    <li>Database: MySQL, MongoDB</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body

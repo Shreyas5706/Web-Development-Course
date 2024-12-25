@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="policy.css">
+</head>
+
+<body>
+    <main>
+
+        <form method="post" action=''>
+            <h1>Policies</h1>
+            <p>Mention all the policies applicable at your property </p>
+
+            <div class="container1">
+                <div class="part part1">
+
+                    <h2>Check-in & Check-out Time </h2>
+                    <p>Specify the check-in & check-out time at your property </p>
+
+                </div>
+
+                <div class="part part2">
+                    <fieldset class="double">
+                        <label for="check-in">Check-in Time
+                            <select id="check-in" name="check-in">
+                                <option value="1">6:00am </option>
+                                <option value="2">7:00am</option>
+                                <option value="3">8:00am</option>
+                                <option value="4">9:00am</option>
+                                <option value="5">10:00am</option>
+                                <option value="6">11:00am</option>
+                                <option value="7" selected>12:00pm (noon)</option>
+                                <option value="8">1:00pm</option>
+                                <option value="9">2:00pm</option>
+                                <option value="10">3:00pm</option>
+                                <option value="11">4:00pm</option>
+                            </select>
+                        </label>
+                    </fieldset>
+
+
+                    <fieldset class="double">
+                        <label for="check-out">Check-out Time
+                            <select id="check-out" name="check-out">
+                                <option value="1">6:00am </option>
+                                <option value="2">7:00am</option>
+                                <option value="3">8:00am</option>
+                                <option value="4">9:00am</option>
+                                <option value="5">10:00am</option>
+                                <option value="6">11:00am</option>
+                                <option value="7" selected>12:00pm (noon)</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                </div>
+
+            </div>
+
+
+            <div class="container2">
+                <div class="part part1">
+                    <h2>Cancellation Policy </h2>
+                    <p>Select a suitable cancellation policy </p>
+                </div>
+
+                <div class="part part2">
+
+                    <fieldset class="Cancellation-policy">
+                        <label for="24hrs"><input id="24hrs" class="btn" type="radio" name="cancel-booking"
+                                class="cancel-your-booking" checked />Free cancellation upto 24hrs </label>
+                        <label for="48hrs"><input id="48hrs" class="btn" type="radio" name="cancel-booking"
+                                class="cancel-your-booking" />Free
+                            cancellation upto 48hrs </label>
+                        <label for="72hrs"><input id="72hrs" class="btn" type="radio" name="cancel-booking"
+                                class="cancel-your-booking" />Free cancellation upto 72hrs </label>
+                        <label for="no-refundable"><input id="non-refundable" class="btn" type="radio"
+                                class="cancel-your-booking" name="cancel-booking" />Non- Refundable </label>
+
+                    </fieldset>
+
+                </div>
+
+            </div>
+
+            <div class="conatiner3">
+
+                <div class="part part1">
+                    <h2>Property Rules (optional) </h2>
+                    <p>Add property rules basis the requirement of your property listing </p>
+                </div>
+
+                <div class="part part2">
+
+                    <h3>Guest Profile </h3>
+
+                    <legend>Do you allow unmarried couples? </legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="unmarried-couples" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="unmarried-couples" /> No</label>
+
+                    <legend>Do you allow guests below 18 years of age at your property? </legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="Below18years" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="Below18years" /> No</label>
+
+
+                    <legend>Groups with only male guests are allowed at your property?</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="onlymaleguests" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="onlymaleguests" /> No</label>
+
+
+
+                </div>
+
+
+
+                <div class="part part3">
+
+                    <h3>Acceptable Identity Proofs </h3>
+                    <p>Please check the Acceptable Identity Prooofs</p>
+
+                    <fieldset class="Identity-proof">
+                        <label for="Passport"><input id="Passport" class="btn" type="checkbox"
+                                name="identity-proof" />Passport </label>
+                        <label for="Aadhar"><input id="Aadhar" class="btn" type="checkbox"
+                                name="identity-proof" />Aadhar</label>
+                        <label for="Driving-licence"><input id="Driving-licence" class="btn" type="checkbox"
+                                name="identity-proof" />Driving licence </label>
+                        <label for="govt-id"><input id="govt-id" class="btn" type="checkbox" name="identity-proof" />Any
+                            Government Id with photo</label>
+
+                    </fieldset>
+
+                    <legend>Are IDs of the same city as the property allowed?</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="samecityid" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="samecityid" /> No</label>
+
+
+
+                </div>
+
+
+                <div class="part part4">
+
+                    <h3>Property Restriction </h3>
+                    <legend>Is smoking allowed anywhere within the premises?(Select 'No' if it's not permitted, even in
+                        outdoor spaces like balconies ) </legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="smoking-permission" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="smoking-permission" /> No</label>
+
+
+                    <legend>Are Private parties or events allowed at the property? </legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="parties" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="parties" /> No</label>
+
+                    <legend>Can guests invite outside visitors in the room during their stay?</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="visitors" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="visitors" /> No</label>
+
+                    <legend>Is your property accessible to guests who use a wheelchair?</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="wheelchair" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="wheelchair" /> No</label>
+
+
+
+                </div>
+
+
+                <div class="part part5">
+                    <h3>Pet Policy</h3>
+                    <legend>Are pets allowed?</legend>
+
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="pets-allowed" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="pets-allowed" /> No</label>
+
+
+                    <legend>Any Pet(s) living on the property?</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="pet-living" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="pet-living" /> No</label>
+
+
+                </div>
+
+
+                <div class="part part6">
+                    <h3>Checkin and Checkout policies</h3>
+
+                    <legend>Do you have a 24-hour check-in?</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="24hrcheckin" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="24hrcheckin" /> No</label>
+
+                </div>
+
+
+                <div class="part part7">
+
+                    <h3>Extra bed policies</h3>
+                    <legend>Do you provide bed to extra adults??</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="extrabedaforadult" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="2extrabedaforadult" /> No</label>
+                    <label for="onavailibility"><input id="onavailibility" class="btn" type="radio"
+                            name="extrabedaforadults" />Subject to Availibility</label>
+
+
+
+                    <legend>Do you provide bed to extra Kids ??</legend>
+                    <label for="Yes"><input id="Yes" class="btn" type="radio" name="extrabedaforkids" />Yes</label>
+                    <label for="No"><input id="No" class="btn" type="radio" name="extrabedaforkids" /> No</label>
+                    <label for="onavailibility"><input id="onavailibility" class="btn" type="radio"
+                            name="extrabedaforkids" />Subject to Availibility</label>
+
+
+
+
+                </div>
+
+
+                <div class="part part8">
+
+
+                    <h3>Custom policy </h3>
+
+                    <fieldset>
+                        <label for="custom-policy"> Custom Policy </label>
+                        <textarea id="custom-policy" placeholder="Please add details " name="custom-policy"
+                            type="textarea" required></textarea>
+                    </fieldset>
+
+
+
+
+                </div>
+
+                <div class="part part9">
+
+                    <h3>Meal rack prices </h3>
+
+                    <label for="breakfast "> Breakfast <input class="Left" type="number" id="breakfast "
+                            name="breakfast" placeholder="$ Enter  "></label>
+
+
+                    <label for="Lunch  "> Lunch <input class="Left" type="number" id="Lunch  " name="Lunch "
+                            placeholder="$ Enter  "></label>
+
+
+                    <label for="Dinner "> Dinner <input class="Left" type="number" id="Dinner  " name="Dinner "
+                            placeholder="$ Enter  "></label>
+
+                </div>
+
+
+            </div>
+
+
+    </main>
+</body>
+
+</html>

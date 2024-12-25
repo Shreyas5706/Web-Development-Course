@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show Div</title>
+</head>
+<body>
+    <h2>Toggle Content Visibility</h2>
+
+    <button onclick="toggleDiv()">Show/Hide Content</button>
+
+    <div id="contentDiv" style="margin-top: 20px;">
+        <p>This is the content inside the div that can be hidden or shown.</p>
+        <p>Click the button to toggle its visibility.</p>
+    </div>
+
+    <script>
+        function toggleDiv() {
+            const contentDiv = document.getElementById('contentDiv');
+            if (contentDiv.style.display === 'none') {
+                contentDiv.style.display = 'block';
+            } else {
+                contentDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

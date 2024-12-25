@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="room.css">
+</head>
+
+<body>
+    <main>
+        <form method="post" action=''>
+            <h1>Rooms</h1>
+            <p>Add room level details </p>
+            <div class="container1">
+
+                <fieldset>
+                    <label for="room-name">Room Name: <input id="room-name" placeholder="Enter room Name:"  name="room-name" type="text" required /></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="room-description">Room Description: </label><textarea id="room-description"
+                        placeholder="Enter Room Description" name="room-description" type="textarea"
+                        required></textarea>
+                </fieldset>
+
+
+                <fieldset>
+                    <label for="Room-count">Numberof avilable Room(s): <input id="Room-count"
+                            placeholder="Enter Room Count" name="Room-count" type="number" required /></label>
+                </fieldset>
+
+
+                <fieldset>
+                    <label for="meal-options">Meal Options
+                        <select id="rating" name="rating    ">
+                            <option value="">Select</option>
+                            <option value="1">Veg</option>
+                            <option value="2">Non-veg</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+
+                <fieldset class="double">
+                    <label for="room-type">Room Type
+                        <select id="room-type" name="room-type">
+                            <option value="">Select</option>
+                            <option value="1">Deluxe</option>
+                            <option value="2">Luxury</option>
+                            <option value="3">Standard</option>
+                            <option value="4">Master</option>
+                            <option value="5">Common</option>
+                            <option value="6">Tent</option>
+                            <option value="7">Family Room</option>
+                            <option value="8">Water Villa/option>
+                            <option value="9">Beach Villa/option>
+                        </select>
+                    </label>
+                </fieldset>
+
+
+                <fieldset class="double">
+                    <label for="Bed-type">Bed Type
+                        <select id="Bed-type" name="Bed-type">
+                            <option value="">Select bed Type</option>
+                            <option value="1">Twin Bed </option>
+                            <option value="2">King Bed </option>
+                            <option value="3">Queen Bed </option>
+                            <option value="4">Double Bed </option>
+                            <option value="5">Single Bed</option>
+                            <option value="5">Sofa Bed</option>
+                            <option value="5">Standard Bed</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <label for="Smoking" class="double">Smoking allowed
+                        <select id="Smoking" name="Smoking">
+                            <option value="1">NO</option>
+                            <option value="2">Yes</option>
+                            <option value="3">In some areas</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+
+            </div>
+
+
+            <div class="container2">
+
+                <Legend>Extra Bed </Legend>
+                <fieldset class="middle">
+                    <label>Do you provide extra bed?</label><br>
+                    <label for="Yes"  ><input id="Yes"   class="btn"  type="radio" name="Extra-bed" checked />Yes</label>
+                    <label for="No" ><input id="No"  class="btn"  type="radio" name="Extra-bed" /> No</label>
+                </fieldset>
+
+            </div>
+
+
+            <div class="container3">
+                <legend>Base Room price</legend>
+
+                <fieldset class="double">
+                    <label for="Base-rate">Base Rate per room: <input id="Base-rate" placeholder="Add rate"  name="Base-rate" type="number" required /></label>
+                </fieldset>
+
+
+                <fieldset class="double">
+                    <label for="Adult-charges">Enter Adult Charge (&gt= 18yrs )(Optional) <input id="Adult-charges" placeholder="Add rate"  name="Adult-charges" type="number" /></label>
+                </fieldset>
+
+                <fieldset class="double">
+                    <label for="Child-charges">Charges for child (7-17 yrs) (Optional) <input id="Child-charges" placeholder="Add rate"  name="Child-charges" type="number" required /></label>
+                </fieldset>
+
+            </div>
+    </main>
+</body>
+
+</html>

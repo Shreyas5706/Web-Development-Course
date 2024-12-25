@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <form method="post" action=''>
+            <h1>Basic Information</h1>
+            <p>Please fill in details of your property </p>
+            <div class="container1">
+                <fieldset>
+                <label for="property-name">Property Name: <input id="property-name" placeholder="Enter Property Name:" name="property-name" type="text" required /></label>
+                </fieldset> 
+                
+                <fieldset>
+                    <label for="rating">Hotel Star rating
+                        <select id="rating" name="rating    ">  
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="built-year">When was the property built?
+                        <select id="built-year" name="built-year">
+                            <option value="">Select</option>
+                            <option value="1">2005</option>
+                            <option value="2">2006</option>
+                            <option value="3">2007</option>
+                            <option value="4">2008</option>
+                            <option value="5">2009</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Do you work with channel manager?</legend>
+                    <label for="no"><input id="no" type="radio" name="ch-manager" class="inline" checked /> No</label>
+                    <label for="yes"><input id="yes" type="radio" name="ch-manager" class="inline" /> Yes</label>
+                </fieldset>
+            
+        </div>
+
+<div class="container">
+            <fieldset>
+                <h3>Contact Details</h3>
+                <fieldset>
+                    <label for="Mobile-number">Mobile-number: <input id="Mobile-number" placeholder="Enter Mobile-number" name="Mobile-number" type="number" required /></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="Email-address">Email Address <input id="Email-address" placeholder="Enter Email-address" name="Email-address" type="email" required /></label>
+                </fieldset>
+            </fieldset>  
+        </div>   
+    </main>
+</body>
+
+</html>
